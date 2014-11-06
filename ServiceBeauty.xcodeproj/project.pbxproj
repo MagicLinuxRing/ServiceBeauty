@@ -47,6 +47,9 @@
 		7CBAF5571A04CD0100D6E74A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAF5551A04CD0100D6E74A /* 1.jpg */; };
 		7CBAF5581A04CD0100D6E74A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAF5561A04CD0100D6E74A /* 2.jpg */; };
 		7CBAF55B1A04F51900D6E74A /* ListButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAF55A1A04F51900D6E74A /* ListButton.m */; };
+		A4B10E4C1A0BB586001DA3E4 /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B10E4B1A0BB586001DA3E4 /* MyOrderViewController.m */; };
+		A4B10E4E1A0BBC44001DA3E4 /* navigationbar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B10E4D1A0BBC44001DA3E4 /* navigationbar_background.png */; };
+		A4B10E501A0BC30D001DA3E4 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B10E4F1A0BC30D001DA3E4 /* back@2x.png */; };
 		A4BBC3731A0B069000D6A596 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBC3721A0B069000D6A596 /* Default-568h@2x.png */; };
 		A4BBC3761A0B079E00D6A596 /* BeautyUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BBC3751A0B079E00D6A596 /* BeautyUtility.m */; };
 		A4BBC3781A0B0BBA00D6A596 /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4BBC3771A0B0BBA00D6A596 /* icon.jpg */; };
@@ -133,6 +136,10 @@
 		7CBAF5561A04CD0100D6E74A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		7CBAF5591A04F51900D6E74A /* ListButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListButton.h; sourceTree = "<group>"; };
 		7CBAF55A1A04F51900D6E74A /* ListButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListButton.m; sourceTree = "<group>"; };
+		A4B10E4A1A0BB586001DA3E4 /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
+		A4B10E4B1A0BB586001DA3E4 /* MyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
+		A4B10E4D1A0BBC44001DA3E4 /* navigationbar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar_background.png; sourceTree = "<group>"; };
+		A4B10E4F1A0BC30D001DA3E4 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		A4BBC3721A0B069000D6A596 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		A4BBC3741A0B079E00D6A596 /* BeautyUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyUtility.h; sourceTree = "<group>"; };
 		A4BBC3751A0B079E00D6A596 /* BeautyUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyUtility.m; sourceTree = "<group>"; };
@@ -202,6 +209,8 @@
 				7CBAF5491A04AC7500D6E74A /* ViewController */,
 				7CBAF52A1A04AB4C00D6E74A /* Main.storyboard */,
 				7CBAF52D1A04AB4C00D6E74A /* Images.xcassets */,
+				A4B10E4D1A0BBC44001DA3E4 /* navigationbar_background.png */,
+				A4B10E4F1A0BC30D001DA3E4 /* back@2x.png */,
 				A4BBC3721A0B069000D6A596 /* Default-568h@2x.png */,
 				A4BBC3811A0B1EF500D6A596 /* cell_icon_2.png */,
 				A4BBC3821A0B1EF500D6A596 /* cell_icon_7.png */,
@@ -285,6 +294,8 @@
 				7CBAF54E1A04ACE200D6E74A /* AccountViewController.m */,
 				A4BBC38D1A0B227D00D6A596 /* AccountTableViewCell.h */,
 				A4BBC38E1A0B227D00D6A596 /* AccountTableViewCell.m */,
+				A4B10E4A1A0BB586001DA3E4 /* MyOrderViewController.h */,
+				A4B10E4B1A0BB586001DA3E4 /* MyOrderViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -395,6 +406,7 @@
 				A4BBC3781A0B0BBA00D6A596 /* icon.jpg in Resources */,
 				A4BBC3731A0B069000D6A596 /* Default-568h@2x.png in Resources */,
 				A4BBC38B1A0B1EF500D6A596 /* cell_icon_3.png in Resources */,
+				A4B10E501A0BC30D001DA3E4 /* back@2x.png in Resources */,
 				7CBAF52C1A04AB4C00D6E74A /* Main.storyboard in Resources */,
 				A4BBC3801A0B0BD000D6A596 /* button2.png in Resources */,
 				A4BBC38C1A0B1EF500D6A596 /* cell_icon_1.png in Resources */,
@@ -409,6 +421,7 @@
 				7CBAACFD1A0A437F00B65DAE /* tabbar_discover@2x.png in Resources */,
 				7CBAACF61A0A437F00B65DAE /* tabbar_message_center_highlighted.png in Resources */,
 				A4BBC38A1A0B1EF500D6A596 /* cell_icon_6.png in Resources */,
+				A4B10E4E1A0BBC44001DA3E4 /* navigationbar_background.png in Resources */,
 				7CBAACF11A0A437F00B65DAE /* tabbar_home@2x.png in Resources */,
 				7CBAF5581A04CD0100D6E74A /* 2.jpg in Resources */,
 				7CBAF5311A04AB4C00D6E74A /* LaunchScreen.xib in Resources */,
@@ -444,6 +457,7 @@
 				7C9E4C331A0A6A1100624819 /* BeautyMakeUpFootTableViewCell.m in Sources */,
 				7C0729601A07A6B00074057E /* BookServiceViewController.m in Sources */,
 				A4BBC38F1A0B227D00D6A596 /* AccountTableViewCell.m in Sources */,
+				A4B10E4C1A0BB586001DA3E4 /* MyOrderViewController.m in Sources */,
 				7CBAF54C1A04ACB400D6E74A /* IntroductionViewController.m in Sources */,
 				7CBAF5261A04AB4C00D6E74A /* AppDelegate.m in Sources */,
 				7CBAF5531A04BA4300D6E74A /* AdvitiseView.m in Sources */,

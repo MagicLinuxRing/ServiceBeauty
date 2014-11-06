@@ -20,9 +20,7 @@
 #define systemVersion [[[UIDevice currentDevice]systemVersion]floatValue]
 
 @interface MainTabBarViewController ()
-{
-    UIView *_tabbarView;
-}
+
 @end
 
 @implementation MainTabBarViewController
@@ -112,8 +110,6 @@
         title.textColor = [UIColor whiteColor];
         [_tabbarView addSubview:title];
     }
-    
-    
 }
 -(void)selectedTab:(UIButton*)sender
 {
@@ -122,4 +118,5 @@
     [self.navigationController popViewControllerAnimated:YES];
     self.selectedViewController = [self.viewControllers objectAtIndex:tag];
 }
+
 @end

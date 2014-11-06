@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MainTabBarViewController : UITabBarController
-
+{
+    UIView *_tabbarView;
+}
+@property(nonatomic,strong)UIView *tabbarView;
 @end

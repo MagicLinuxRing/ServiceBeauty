@@ -9,6 +9,7 @@
 #import "AccountViewController.h"
 #import "BeautyUtility.h"
 #import "AccountTableViewCell.h"
+#import "MyOrderViewController.h"
 
 float  const LabelHeight = 15.0f;
 
@@ -27,10 +28,11 @@ float  const LabelHeight = 15.0f;
 
 @implementation AccountViewController
 
--(void)viewDidAppear:(BOOL)animated
+-(void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
+    [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
+    
 }
 
 - (void)viewDidLoad {
@@ -101,7 +103,7 @@ float  const LabelHeight = 15.0f;
     for (int i = 0; i<4; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.backgroundColor = [UIColor clearColor];
-         button.frame = CGRectMake(80*i, _TopView.frame.size.height, 80.0f, 55.0f);
+         button.frame = CGRectMake((ScreenWidth/4)*i, _TopView.frame.size.height, ScreenWidth/4, 55.0f);
         [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"button%d",i+1]] forState:UIControlStateNormal];
         button.tag = i;
         [button addTarget:self action:@selector(Touch:) forControlEvents:UIControlEventTouchUpInside];
@@ -117,6 +119,8 @@ float  const LabelHeight = 15.0f;
         case 0:
         {
             NSLog(@"我的订单");
+            MyOrderViewController *myorder = [[MyOrderViewController alloc]init];
+            [self.navigationController pushViewController:myorder animated:YES];
         }
             break;
         case 1:
@@ -194,30 +198,34 @@ float  const LabelHeight = 15.0f;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 1)
-    {
-        NSLog(@"个人资料");
+    if (indexPath.row!=0 && indexPath.row!=5) {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        if (indexPath.row == 1)
+        {
+            NSLog(@"个人资料");
+        }
+        else if (indexPath.row == 2)
+        {
+            NSLog(@"修改密码");
+        }
+        else if (indexPath.row == 3)
+        {
+            NSLog(@"我的积分");
+        }
+        else if (indexPath.row == 4)
+        {
+            NSLog(@"朋友圈");
+        }
+        else if (indexPath.row == 6)
+        {
+            NSLog(@"我的邀请码");
+        }
+        else if (indexPath.row == 7)
+        {
+            NSLog(@"退出账户");
+        }
+
     }
-    else if (indexPath.row == 2)
-    {
-        NSLog(@"修改密码");
-    }
-    else if (indexPath.row == 3)
-    {
-        NSLog(@"我的积分");
-    }
-    else if (indexPath.row == 4)
-    {
-        NSLog(@"朋友圈");
-    }
-    else if (indexPath.row == 6)
-    {
-        NSLog(@"我的邀请码");
-    }
-    else if (indexPath.row == 7)
-    {
-        NSLog(@"退出账户");
-    }
- 
+    
 }
 @end
