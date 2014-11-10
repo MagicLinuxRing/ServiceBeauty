@@ -147,8 +147,8 @@
 		A4BBC3841A0B1EF500D6A596 /* cell_icon_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_icon_6.png; sourceTree = "<group>"; };
 		A4BBC3851A0B1EF500D6A596 /* cell_icon_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_icon_3.png; sourceTree = "<group>"; };
 		A4BBC3861A0B1EF500D6A596 /* cell_icon_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_icon_1.png; sourceTree = "<group>"; };
-		A4BBC38D1A0B227D00D6A596 /* AccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableViewCell.h; sourceTree = "<group>"; };
-		A4BBC38E1A0B227D00D6A596 /* AccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTableViewCell.m; sourceTree = "<group>"; };
+		A4BBC38D1A0B227D00D6A596 /* AccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountTableViewCell.h; path = ../AccountTableViewCell.h; sourceTree = "<group>"; };
+		A4BBC38E1A0B227D00D6A596 /* AccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountTableViewCell.m; path = ../AccountTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,39 +169,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7CBAF5141A04AB4C00D6E74A = {
+		7CB98BCC1A10E8F5005395F2 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				7CBAF51F1A04AB4C00D6E74A /* ServiceBeauty */,
-				7CBAF5391A04AB4C00D6E74A /* ServiceBeautyTests */,
-				7CBAF51E1A04AB4C00D6E74A /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		7CBAF51E1A04AB4C00D6E74A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7CBAF51D1A04AB4C00D6E74A /* ServiceBeauty.app */,
-				7CBAF5361A04AB4C00D6E74A /* ServiceBeautyTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7CBAF51F1A04AB4C00D6E74A /* ServiceBeauty */ = {
-			isa = PBXGroup;
-			children = (
-				7CBAF5241A04AB4C00D6E74A /* AppDelegate.h */,
-				7CBAF5251A04AB4C00D6E74A /* AppDelegate.m */,
 				7CBAACD61A0A42EE00B65DAE /* MainTabBarViewController.h */,
 				7CBAACD71A0A42EE00B65DAE /* MainTabBarViewController.m */,
 				7CBAACD81A0A42EE00B65DAE /* BaseNavigationController.h */,
 				7CBAACD91A0A42EE00B65DAE /* BaseNavigationController.m */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		7CB98BCD1A10E903005395F2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
 				A4BBC3741A0B079E00D6A596 /* BeautyUtility.h */,
 				A4BBC3751A0B079E00D6A596 /* BeautyUtility.m */,
-				7CBAF5501A04BA2200D6E74A /* View */,
-				7CBAF5491A04AC7500D6E74A /* ViewController */,
-				7CBAF52A1A04AB4C00D6E74A /* Main.storyboard */,
-				7CBAF52D1A04AB4C00D6E74A /* Images.xcassets */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		7CB98BCE1A10E915005395F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7C9E4C311A0A6A1100624819 /* BeautyMakeUpFootTableViewCell.h */,
+				7C9E4C321A0A6A1100624819 /* BeautyMakeUpFootTableViewCell.m */,
+				7CB8C49D1A060CAE00C47C24 /* SubListTableViewCell.h */,
+				7CB8C49E1A060CAE00C47C24 /* SubListTableViewCell.m */,
+				A4BBC38D1A0B227D00D6A596 /* AccountTableViewCell.h */,
+				A4BBC38E1A0B227D00D6A596 /* AccountTableViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		7CB98BD01A10E942005395F2 /* Image */ = {
+			isa = PBXGroup;
+			children = (
 				A4BBC3721A0B069000D6A596 /* Default-568h@2x.png */,
 				A4BBC3811A0B1EF500D6A596 /* cell_icon_2.png */,
 				A4BBC3821A0B1EF500D6A596 /* cell_icon_7.png */,
@@ -234,7 +237,80 @@
 				7CBAACEB1A0A437F00B65DAE /* tabbar_discover@2x.png */,
 				7CBAACEC1A0A437F00B65DAE /* tabbar_discover_highlighted.png */,
 				7CBAACED1A0A437F00B65DAE /* tabbar_discover_highlighted@2x.png */,
-				7CBAF52F1A04AB4C00D6E74A /* LaunchScreen.xib */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		7CB98BD11A10E983005395F2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7CBAF5271A04AB4C00D6E74A /* MainViewController.h */,
+				7CBAF5281A04AB4C00D6E74A /* MainViewController.m */,
+				7CB8C49A1A06054A00C47C24 /* SubListViewController.h */,
+				7CB8C49B1A06054A00C47C24 /* SubListViewController.m */,
+				7C9E4C2E1A0A693B00624819 /* BeautyMakeUpFootViewController.h */,
+				7C9E4C2F1A0A693B00624819 /* BeautyMakeUpFootViewController.m */,
+				7C07295E1A07A6B00074057E /* BookServiceViewController.h */,
+				7C07295F1A07A6B00074057E /* BookServiceViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		7CB98BD21A10E9A1005395F2 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				7CBAF5461A04AC6900D6E74A /* ShareViewController.h */,
+				7CBAF5471A04AC6900D6E74A /* ShareViewController.m */,
+			);
+			name = Share;
+			sourceTree = "<group>";
+		};
+		7CB98BD31A10E9AC005395F2 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				7CBAF54A1A04ACB400D6E74A /* IntroductionViewController.h */,
+				7CBAF54B1A04ACB400D6E74A /* IntroductionViewController.m */,
+			);
+			name = Introduction;
+			sourceTree = "<group>";
+		};
+		7CB98BD41A10E9B9005395F2 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				7CBAF54D1A04ACE200D6E74A /* AccountViewController.h */,
+				7CBAF54E1A04ACE200D6E74A /* AccountViewController.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		7CBAF5141A04AB4C00D6E74A = {
+			isa = PBXGroup;
+			children = (
+				7CBAF51F1A04AB4C00D6E74A /* ServiceBeauty */,
+				7CBAF5391A04AB4C00D6E74A /* ServiceBeautyTests */,
+				7CBAF51E1A04AB4C00D6E74A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CBAF51E1A04AB4C00D6E74A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CBAF51D1A04AB4C00D6E74A /* ServiceBeauty.app */,
+				7CBAF5361A04AB4C00D6E74A /* ServiceBeautyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CBAF51F1A04AB4C00D6E74A /* ServiceBeauty */ = {
+			isa = PBXGroup;
+			children = (
+				7CBAF5241A04AB4C00D6E74A /* AppDelegate.h */,
+				7CBAF5251A04AB4C00D6E74A /* AppDelegate.m */,
+				7CB98BCC1A10E8F5005395F2 /* TabBar */,
+				7CB98BCD1A10E903005395F2 /* Common */,
+				7CBAF5501A04BA2200D6E74A /* View */,
+				7CBAF5491A04AC7500D6E74A /* ViewController */,
+				7CB98BD01A10E942005395F2 /* Image */,
 				7CBAF5201A04AB4C00D6E74A /* Supporting Files */,
 			);
 			path = ServiceBeauty;
@@ -243,6 +319,9 @@
 		7CBAF5201A04AB4C00D6E74A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7CBAF52D1A04AB4C00D6E74A /* Images.xcassets */,
+				7CBAF52A1A04AB4C00D6E74A /* Main.storyboard */,
+				7CBAF52F1A04AB4C00D6E74A /* LaunchScreen.xib */,
 				7CBAF5211A04AB4C00D6E74A /* Info.plist */,
 				7CBAF5221A04AB4C00D6E74A /* main.m */,
 			);
@@ -269,22 +348,10 @@
 		7CBAF5491A04AC7500D6E74A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7CBAF5271A04AB4C00D6E74A /* MainViewController.h */,
-				7CBAF5281A04AB4C00D6E74A /* MainViewController.m */,
-				7CB8C49A1A06054A00C47C24 /* SubListViewController.h */,
-				7CB8C49B1A06054A00C47C24 /* SubListViewController.m */,
-				7C9E4C2E1A0A693B00624819 /* BeautyMakeUpFootViewController.h */,
-				7C9E4C2F1A0A693B00624819 /* BeautyMakeUpFootViewController.m */,
-				7C07295E1A07A6B00074057E /* BookServiceViewController.h */,
-				7C07295F1A07A6B00074057E /* BookServiceViewController.m */,
-				7CBAF5461A04AC6900D6E74A /* ShareViewController.h */,
-				7CBAF5471A04AC6900D6E74A /* ShareViewController.m */,
-				7CBAF54A1A04ACB400D6E74A /* IntroductionViewController.h */,
-				7CBAF54B1A04ACB400D6E74A /* IntroductionViewController.m */,
-				7CBAF54D1A04ACE200D6E74A /* AccountViewController.h */,
-				7CBAF54E1A04ACE200D6E74A /* AccountViewController.m */,
-				A4BBC38D1A0B227D00D6A596 /* AccountTableViewCell.h */,
-				A4BBC38E1A0B227D00D6A596 /* AccountTableViewCell.m */,
+				7CB98BD11A10E983005395F2 /* Main */,
+				7CB98BD21A10E9A1005395F2 /* Share */,
+				7CB98BD31A10E9AC005395F2 /* Introduction */,
+				7CB98BD41A10E9B9005395F2 /* Account */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -296,12 +363,9 @@
 				7CBAF5521A04BA4300D6E74A /* AdvitiseView.m */,
 				7CB8C4A01A06129400C47C24 /* SubListView.h */,
 				7CB8C4A11A06129400C47C24 /* SubListView.m */,
-				7C9E4C311A0A6A1100624819 /* BeautyMakeUpFootTableViewCell.h */,
-				7C9E4C321A0A6A1100624819 /* BeautyMakeUpFootTableViewCell.m */,
 				7CBAF5591A04F51900D6E74A /* ListButton.h */,
 				7CBAF55A1A04F51900D6E74A /* ListButton.m */,
-				7CB8C49D1A060CAE00C47C24 /* SubListTableViewCell.h */,
-				7CB8C49E1A060CAE00C47C24 /* SubListTableViewCell.m */,
+				7CB98BCE1A10E915005395F2 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";

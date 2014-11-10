@@ -51,6 +51,7 @@
 //主页面的四个按钮
 - (void)initBusinessBtn
 {
+    //造假数据
     NSDictionary  *dic1 = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"1.jpg", @"imageName", @"美容", @"lblName", nil];
     NSDictionary  *dic2 = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"2.jpg", @"imageName", @"美体", @"lblName", nil];
     NSDictionary  *dic3 = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"2.jpg", @"imageName", @"美妆", @"lblName", nil];
@@ -100,9 +101,12 @@
     rect.size.width = 200;
     rect.size.height = 44;
     callComeBtn.tag = 1004;
+    callComeBtn.layer.cornerRadius = 5;
     callComeBtn.frame = rect;
     [callComeBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-    callComeBtn.backgroundColor = [UIColor redColor];
+    callComeBtn.backgroundColor = [UIColor lightGrayColor];
+    [callComeBtn setTitle:@"随叫随到" forState:UIControlStateNormal];
+    [callComeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:callComeBtn];
 }
 
@@ -125,6 +129,8 @@
             break;
     }
 }
+
+#pragma mark - push
 
 - (void)pushToBusinessSubViewController:(NSString *)serViceName
 {

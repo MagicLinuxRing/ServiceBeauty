@@ -112,9 +112,8 @@
         title.textColor = [UIColor whiteColor];
         [_tabbarView addSubview:title];
     }
-    
-    
 }
+
 -(void)selectedTab:(UIButton*)sender
 {
     NSInteger tag = sender.tag;

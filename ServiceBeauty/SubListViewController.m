@@ -68,7 +68,7 @@
 - (void)backForBeautyService:(NSDictionary *)dic
 {
     BookServiceViewController *serviceView = [[BookServiceViewController alloc]init];
-    [self.navigationController pushViewController:serviceView animated:YES];
+    [self.navigationController pushViewController:serviceView animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
