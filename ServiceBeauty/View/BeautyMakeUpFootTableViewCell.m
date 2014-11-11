@@ -9,6 +9,7 @@
 #import "BeautyMakeUpFootTableViewCell.h"
 
 @implementation BeautyMakeUpFootTableViewCell
+@synthesize beautyDic;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -48,9 +49,17 @@
 
 - (void)createUIWithDic:(NSDictionary *)dic
 {
+    self.beautyDic = dic;
+    
     _headImg.layer.contents = (id)[[UIImage imageNamed:dic[@"image"]] CGImage];
     _serviceNameLbl.text = dic[@"serviceName"];
     _serviceStandardLbl.text = dic[@"standard"];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    _headImg.layer.contents = (id)[[UIImage imageNamed:self.beautyDic[@"image"]] CGImage];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

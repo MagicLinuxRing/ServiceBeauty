@@ -14,7 +14,10 @@
     UILabel *_serviceNameLbl;
     
     UIImageView *_headImg;
+    
 }
+
+@property (nonatomic,retain)NSDictionary *beautyDic;
 
 - (void)createUIWithDic:(NSDictionary *)dic;
 @end

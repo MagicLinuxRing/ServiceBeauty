@@ -10,6 +10,8 @@
 	<string>ServiceBeauty</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>0AD2A07C9E1DAC6A14A65DAD35A5A932D68CDED4</key>
+		<string>https://github.com/MagicLinuxRing/ServiceBeauty.git</string>
 		<key>F246EF957C5C5B4C46DFEB662E2F5C3E30A9739F</key>
 		<string>https://github.com/MagicLinuxRing/BeautyService.git</string>
 	</dict>
@@ -17,15 +19,17 @@
 	<string>ServiceBeauty.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F246EF957C5C5B4C46DFEB662E2F5C3E30A9739F</key>
+		<key>0AD2A07C9E1DAC6A14A65DAD35A5A932D68CDED4</key>
 		<string>../..</string>
+		<key>F246EF957C5C5B4C46DFEB662E2F5C3E30A9739F</key>
+		<string>../../../BeautyService</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/MagicLinuxRing/BeautyService.git</string>
+	<string>https://github.com/MagicLinuxRing/ServiceBeauty.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F246EF957C5C5B4C46DFEB662E2F5C3E30A9739F</string>
+	<string>0AD2A07C9E1DAC6A14A65DAD35A5A932D68CDED4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>F246EF957C5C5B4C46DFEB662E2F5C3E30A9739F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BeautyService</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0AD2A07C9E1DAC6A14A65DAD35A5A932D68CDED4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ServiceBeauty</string>
 		</dict>
 	</array>
 </dict>
