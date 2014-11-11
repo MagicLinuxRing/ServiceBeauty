@@ -19,7 +19,13 @@
 //判断版本
 #define systemVersion [[[UIDevice currentDevice]systemVersion]floatValue]
 
+static BOOL FIRSTTIME = YES;
+
 @interface MainTabBarViewController ()
+{
+    UIImageView *slideBg;
+    UIImageView *backGroundImageView;
+}
 
 @end
 
@@ -32,6 +38,63 @@
         [self.tabBar setHidden:YES];
     }
     return self;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if (FIRSTTIME) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:@"hideCustomTabBar" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(hideCustomTabBar)
+                                                     name:@"hideCustomTabBar"
+                                                   object:nil];
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:@"bringCustomTabBarToFront" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(bringCustomTabBarToFront)
+                                                     name:@"bringCustomTabBarToFront"
+                                                   object:nil];
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:@"setBadge" object:nil];
+        
+        slideBg = [[UIImageView alloc] init];
+        [self hideRealTabBar];
+        [self _initTabbarView];
+        FIRSTTIME = NO;
+    }
+}
+
+//隐藏自定义tabbar
+- (void)hideCustomTabBar {
+    [self performSelector:@selector(hideRealTabBar)];
+    CAKeyframeAnimation *animation;
+    animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    animation.duration = 0.1;
+    animation.delegate = self;
+    animation.removedOnCompletion = YES;
+    animation.fillMode = kCAFillModeForwards;
+    NSMutableArray *values = [NSMutableArray array];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.5, 0.5, 1.0)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.0, 0.0, 0.0)]];
+    animation.values = values;
+    [_tabbarView.layer addAnimation:animation forKey:nil];
+}
+
+- (void)bringCustomTabBarToFront {
+    //[self performSelector:@selector(hideRealTabBar)];
+    [_tabbarView setHidden:NO];
+    CAKeyframeAnimation *animation;
+    animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    animation.duration = 0.25;
+    animation.delegate = self;
+    animation.removedOnCompletion = YES;
+    animation.fillMode = kCAFillModeForwards;
+    NSMutableArray *values = [NSMutableArray array];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.0, 0.0, 0.0)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.5, 0.5, 1.0)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]];
+    animation.values = values;
+    [_tabbarView.layer addAnimation:animation forKey:nil];
 }
 
 - (void)viewDidLoad
@@ -82,7 +145,7 @@
                            @"tabbar_message_center.png",
                            @"tabbar_profile.png",
                            @"tabbar_discover.png"];
-   
+    
     NSArray *heightBackground =@[@"tabbar_home_highlighted.png",
                                  @"tabbar_message_center_highlighted.png",
                                  @"tabbar_profile_highlighted.png",
@@ -112,12 +175,27 @@
     }
 }
 
+//隐藏tabbar
+- (void)hideRealTabBar {
+    for (UIView *view in self.view.subviews)
+    {
+        if ([view isKindOfClass:[UITabBar class]])
+        {
+            view.hidden = YES;
+            break;
+        }
+    }
+}
+
 -(void)selectedTab:(UIButton*)sender
 {
+    if (self.selectedIndex == sender.tag)
+    {
+        [[self.viewControllers objectAtIndex:sender.tag] popToRootViewControllerAnimated:YES];
+        return;
+    }
     NSInteger tag = sender.tag;
     self.selectedIndex = tag;
-    [self.navigationController popViewControllerAnimated:YES];
-    self.selectedViewController = [self.viewControllers objectAtIndex:tag];
 }
 
 @end
