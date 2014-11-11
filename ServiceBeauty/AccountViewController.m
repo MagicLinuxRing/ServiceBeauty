@@ -10,6 +10,7 @@
 #import "BeautyUtility.h"
 #import "AccountTableViewCell.h"
 #import "MyOrderViewController.h"
+#import "CollectViewController.h"
 
 float  const LabelHeight = 15.0f;
 
@@ -32,11 +33,11 @@ float  const LabelHeight = 15.0f;
 {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
-    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.view.backgroundColor = [UIColor colorWithRed:241/255.0f green:241/255.0f blue:241/255.0f alpha:1.0];
     [self topview];
     [self buttons];
@@ -126,6 +127,8 @@ float  const LabelHeight = 15.0f;
         case 1:
         {
             NSLog(@"我的收藏");
+            CollectViewController *collect = [[CollectViewController alloc]init];
+            [self.navigationController pushViewController:collect animated:YES];
         }
             break;
         case 2:

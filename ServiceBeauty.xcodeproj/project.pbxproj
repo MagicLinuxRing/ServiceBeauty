@@ -47,6 +47,11 @@
 		7CBAF5571A04CD0100D6E74A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAF5551A04CD0100D6E74A /* 1.jpg */; };
 		7CBAF5581A04CD0100D6E74A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAF5561A04CD0100D6E74A /* 2.jpg */; };
 		7CBAF55B1A04F51900D6E74A /* ListButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAF55A1A04F51900D6E74A /* ListButton.m */; };
+		A40B5D661A110A5300C65330 /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = A40B5D651A110A5300C65330 /* time.png */; };
+		A40B5D681A110F0300C65330 /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = A40B5D671A110F0300C65330 /* arrows.png */; };
+		A46510151A11D77500C3DA48 /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A46510141A11D77500C3DA48 /* CollectViewController.m */; };
+		A46510181A11E14B00C3DA48 /* CollectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A46510171A11E14B00C3DA48 /* CollectTableViewCell.m */; };
+		A465101A1A11F1F300C3DA48 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = A46510191A11F1F300C3DA48 /* star.png */; };
 		A4B10E4C1A0BB586001DA3E4 /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B10E4B1A0BB586001DA3E4 /* MyOrderViewController.m */; };
 		A4B10E4E1A0BBC44001DA3E4 /* navigationbar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B10E4D1A0BBC44001DA3E4 /* navigationbar_background.png */; };
 		A4B10E501A0BC30D001DA3E4 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B10E4F1A0BC30D001DA3E4 /* back@2x.png */; };
@@ -64,6 +69,7 @@
 		A4BBC38B1A0B1EF500D6A596 /* cell_icon_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBC3851A0B1EF500D6A596 /* cell_icon_3.png */; };
 		A4BBC38C1A0B1EF500D6A596 /* cell_icon_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBC3861A0B1EF500D6A596 /* cell_icon_1.png */; };
 		A4BBC38F1A0B227D00D6A596 /* AccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BBC38E1A0B227D00D6A596 /* AccountTableViewCell.m */; };
+		A4D9E8741A0FCC5600F585C8 /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D9E8731A0FCC5600F585C8 /* OrderTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +142,13 @@
 		7CBAF5561A04CD0100D6E74A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		7CBAF5591A04F51900D6E74A /* ListButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListButton.h; sourceTree = "<group>"; };
 		7CBAF55A1A04F51900D6E74A /* ListButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListButton.m; sourceTree = "<group>"; };
+		A40B5D651A110A5300C65330 /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time.png; sourceTree = "<group>"; };
+		A40B5D671A110F0300C65330 /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrows.png; sourceTree = "<group>"; };
+		A46510131A11D77500C3DA48 /* CollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectViewController.h; sourceTree = "<group>"; };
+		A46510141A11D77500C3DA48 /* CollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectViewController.m; sourceTree = "<group>"; };
+		A46510161A11E14B00C3DA48 /* CollectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectTableViewCell.h; sourceTree = "<group>"; };
+		A46510171A11E14B00C3DA48 /* CollectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectTableViewCell.m; sourceTree = "<group>"; };
+		A46510191A11F1F300C3DA48 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		A4B10E4A1A0BB586001DA3E4 /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
 		A4B10E4B1A0BB586001DA3E4 /* MyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
 		A4B10E4D1A0BBC44001DA3E4 /* navigationbar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar_background.png; sourceTree = "<group>"; };
@@ -156,6 +169,8 @@
 		A4BBC3861A0B1EF500D6A596 /* cell_icon_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_icon_1.png; sourceTree = "<group>"; };
 		A4BBC38D1A0B227D00D6A596 /* AccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableViewCell.h; sourceTree = "<group>"; };
 		A4BBC38E1A0B227D00D6A596 /* AccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTableViewCell.m; sourceTree = "<group>"; };
+		A4D9E8721A0FCC5600F585C8 /* OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableViewCell.h; sourceTree = "<group>"; };
+		A4D9E8731A0FCC5600F585C8 /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +224,10 @@
 				7CBAF5491A04AC7500D6E74A /* ViewController */,
 				7CBAF52A1A04AB4C00D6E74A /* Main.storyboard */,
 				7CBAF52D1A04AB4C00D6E74A /* Images.xcassets */,
+				A46510191A11F1F300C3DA48 /* star.png */,
 				A4B10E4D1A0BBC44001DA3E4 /* navigationbar_background.png */,
+				A40B5D671A110F0300C65330 /* arrows.png */,
+				A40B5D651A110A5300C65330 /* time.png */,
 				A4B10E4F1A0BC30D001DA3E4 /* back@2x.png */,
 				A4BBC3721A0B069000D6A596 /* Default-568h@2x.png */,
 				A4BBC3811A0B1EF500D6A596 /* cell_icon_2.png */,
@@ -296,6 +314,12 @@
 				A4BBC38E1A0B227D00D6A596 /* AccountTableViewCell.m */,
 				A4B10E4A1A0BB586001DA3E4 /* MyOrderViewController.h */,
 				A4B10E4B1A0BB586001DA3E4 /* MyOrderViewController.m */,
+				A4D9E8721A0FCC5600F585C8 /* OrderTableViewCell.h */,
+				A4D9E8731A0FCC5600F585C8 /* OrderTableViewCell.m */,
+				A46510131A11D77500C3DA48 /* CollectViewController.h */,
+				A46510141A11D77500C3DA48 /* CollectViewController.m */,
+				A46510161A11E14B00C3DA48 /* CollectTableViewCell.h */,
+				A46510171A11E14B00C3DA48 /* CollectTableViewCell.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -408,7 +432,9 @@
 				A4BBC38B1A0B1EF500D6A596 /* cell_icon_3.png in Resources */,
 				A4B10E501A0BC30D001DA3E4 /* back@2x.png in Resources */,
 				7CBAF52C1A04AB4C00D6E74A /* Main.storyboard in Resources */,
+				A40B5D681A110F0300C65330 /* arrows.png in Resources */,
 				A4BBC3801A0B0BD000D6A596 /* button2.png in Resources */,
+				A40B5D661A110A5300C65330 /* time.png in Resources */,
 				A4BBC38C1A0B1EF500D6A596 /* cell_icon_1.png in Resources */,
 				A4BBC37E1A0B0BD000D6A596 /* button3.png in Resources */,
 				A4BBC3881A0B1EF500D6A596 /* cell_icon_7.png in Resources */,
@@ -416,6 +442,7 @@
 				7CBAACFB1A0A437F00B65DAE /* tabbar_profile_highlighted@2x.png in Resources */,
 				7CBAACF91A0A437F00B65DAE /* tabbar_profile@2x.png in Resources */,
 				7CBAACEF1A0A437F00B65DAE /* tabbar_background@2x.png in Resources */,
+				A465101A1A11F1F300C3DA48 /* star.png in Resources */,
 				7CBAACFE1A0A437F00B65DAE /* tabbar_discover_highlighted.png in Resources */,
 				7CBAF5571A04CD0100D6E74A /* 1.jpg in Resources */,
 				7CBAACFD1A0A437F00B65DAE /* tabbar_discover@2x.png in Resources */,
@@ -451,10 +478,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46510181A11E14B00C3DA48 /* CollectTableViewCell.m in Sources */,
 				7CBAF5291A04AB4C00D6E74A /* MainViewController.m in Sources */,
 				A4BBC3761A0B079E00D6A596 /* BeautyUtility.m in Sources */,
 				7C0729611A07B3280074057E /* SubListView.m in Sources */,
 				7C9E4C331A0A6A1100624819 /* BeautyMakeUpFootTableViewCell.m in Sources */,
+				A46510151A11D77500C3DA48 /* CollectViewController.m in Sources */,
 				7C0729601A07A6B00074057E /* BookServiceViewController.m in Sources */,
 				A4BBC38F1A0B227D00D6A596 /* AccountTableViewCell.m in Sources */,
 				A4B10E4C1A0BB586001DA3E4 /* MyOrderViewController.m in Sources */,
@@ -469,6 +498,7 @@
 				7C9E4C301A0A693B00624819 /* BeautyMakeUpFootViewController.m in Sources */,
 				7CBAF5231A04AB4C00D6E74A /* main.m in Sources */,
 				7CBAF55B1A04F51900D6E74A /* ListButton.m in Sources */,
+				A4D9E8741A0FCC5600F585C8 /* OrderTableViewCell.m in Sources */,
 				7CB8C49C1A06054A00C47C24 /* SubListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
