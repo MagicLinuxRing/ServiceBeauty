@@ -9,6 +9,7 @@
 #import "MyOrderViewController.h"
 #import "BeautyUtility.h"
 #import "OrderTableViewCell.h"
+#import "OrderDetailsViewController.h"
 
 @interface MyOrderViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -92,13 +93,14 @@
 
     UIBarButtonItem *leftbuttonItem = [[UIBarButtonItem alloc]initWithCustomView:leftbutton];
     self.navigationItem.leftBarButtonItem = leftbuttonItem;
+    
     [self segmentedview];
     [self todotableview];
 }
 
 -(void)todotableview
 {
-    _TodoTableView = [[UITableView alloc]initWithFrame:CGRectMake((ScreenWidth-300)/2, 64+32+6, 300, ScreenHeight - 64-32-49) style:UITableViewStylePlain];
+    _TodoTableView = [[UITableView alloc]initWithFrame:CGRectMake(10, 64+32+6,ScreenWidth-20, ScreenHeight - 64-32-49) style:UITableViewStylePlain];
     _TodoTableView.backgroundColor = [UIColor clearColor];
     _TodoTableView.showsVerticalScrollIndicator = NO;
     _TodoTableView.delegate = self;
@@ -114,7 +116,7 @@
 
 -(void)dodidtableview
 {
-    _DodidTableView = [[UITableView alloc]initWithFrame:CGRectMake((ScreenWidth-300)/2, 64+32+6, 300, ScreenHeight - 64-32-49) style:UITableViewStylePlain];
+    _DodidTableView = [[UITableView alloc]initWithFrame:CGRectMake(10, 64+32+6,ScreenWidth-20, ScreenHeight - 64-32-49) style:UITableViewStylePlain];
     _DodidTableView.backgroundColor = [UIColor clearColor];
     _DodidTableView.showsVerticalScrollIndicator = NO;
     _DodidTableView.delegate = self;
@@ -182,7 +184,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
+    if (tableView == _TodoTableView)
+    {
+        OrderDetailsViewController * details = [[OrderDetailsViewController alloc]init];
+        [self.navigationController pushViewController:details animated:YES];
+    }
+    else
+    {
+        
+    }
     
 }
 

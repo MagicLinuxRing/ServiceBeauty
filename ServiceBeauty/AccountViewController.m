@@ -152,6 +152,8 @@ float  const LabelHeight = 15.0f;
     _TableView.backgroundColor = [UIColor clearColor];
     _TableView.delegate = self;
     _TableView.dataSource = self;
+    _TableView.showsHorizontalScrollIndicator = NO;
+    _TableView.showsVerticalScrollIndicator = NO;
     _TableView.tableFooterView = [[UIView alloc]init];
     [self.view addSubview:_TableView];
     _Array = @[@"",@"个人资料",@"修改密码",@"我的积分",@"朋友圈",@"",@"我的邀请码",@"退出账户"];

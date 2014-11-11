@@ -52,6 +52,7 @@
 		A46510151A11D77500C3DA48 /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A46510141A11D77500C3DA48 /* CollectViewController.m */; };
 		A46510181A11E14B00C3DA48 /* CollectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A46510171A11E14B00C3DA48 /* CollectTableViewCell.m */; };
 		A465101A1A11F1F300C3DA48 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = A46510191A11F1F300C3DA48 /* star.png */; };
+		A465101D1A11FB3000C3DA48 /* OrderDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A465101C1A11FB3000C3DA48 /* OrderDetailsViewController.m */; };
 		A4B10E4C1A0BB586001DA3E4 /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B10E4B1A0BB586001DA3E4 /* MyOrderViewController.m */; };
 		A4B10E4E1A0BBC44001DA3E4 /* navigationbar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B10E4D1A0BBC44001DA3E4 /* navigationbar_background.png */; };
 		A4B10E501A0BC30D001DA3E4 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B10E4F1A0BC30D001DA3E4 /* back@2x.png */; };
@@ -149,6 +150,8 @@
 		A46510161A11E14B00C3DA48 /* CollectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectTableViewCell.h; sourceTree = "<group>"; };
 		A46510171A11E14B00C3DA48 /* CollectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectTableViewCell.m; sourceTree = "<group>"; };
 		A46510191A11F1F300C3DA48 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		A465101B1A11FB3000C3DA48 /* OrderDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailsViewController.h; sourceTree = "<group>"; };
+		A465101C1A11FB3000C3DA48 /* OrderDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailsViewController.m; sourceTree = "<group>"; };
 		A4B10E4A1A0BB586001DA3E4 /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
 		A4B10E4B1A0BB586001DA3E4 /* MyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
 		A4B10E4D1A0BBC44001DA3E4 /* navigationbar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar_background.png; sourceTree = "<group>"; };
@@ -314,6 +317,8 @@
 				A4BBC38E1A0B227D00D6A596 /* AccountTableViewCell.m */,
 				A4B10E4A1A0BB586001DA3E4 /* MyOrderViewController.h */,
 				A4B10E4B1A0BB586001DA3E4 /* MyOrderViewController.m */,
+				A465101B1A11FB3000C3DA48 /* OrderDetailsViewController.h */,
+				A465101C1A11FB3000C3DA48 /* OrderDetailsViewController.m */,
 				A4D9E8721A0FCC5600F585C8 /* OrderTableViewCell.h */,
 				A4D9E8731A0FCC5600F585C8 /* OrderTableViewCell.m */,
 				A46510131A11D77500C3DA48 /* CollectViewController.h */,
@@ -495,6 +500,7 @@
 				7CBAACDB1A0A42EE00B65DAE /* BaseNavigationController.m in Sources */,
 				7CBAF5481A04AC6900D6E74A /* ShareViewController.m in Sources */,
 				7CBAF54F1A04ACE200D6E74A /* AccountViewController.m in Sources */,
+				A465101D1A11FB3000C3DA48 /* OrderDetailsViewController.m in Sources */,
 				7C9E4C301A0A693B00624819 /* BeautyMakeUpFootViewController.m in Sources */,
 				7CBAF5231A04AB4C00D6E74A /* main.m in Sources */,
 				7CBAF55B1A04F51900D6E74A /* ListButton.m in Sources */,
