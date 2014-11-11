@@ -10,10 +10,7 @@
 		7C0729611A07B3280074057E /* SubListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB8C4A11A06129400C47C24 /* SubListView.m */; };
 		7C9E4C331A0A6A1100624819 /* BeautyMakeUpFootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9E4C321A0A6A1100624819 /* BeautyMakeUpFootTableViewCell.m */; };
 		7CB8C49F1A060CAE00C47C24 /* SubListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB8C49E1A060CAE00C47C24 /* SubListTableViewCell.m */; };
-		7CBAACDA1A0A42EE00B65DAE /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAACD71A0A42EE00B65DAE /* MainTabBarViewController.m */; };
-		7CBAACDB1A0A42EE00B65DAE /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAACD91A0A42EE00B65DAE /* BaseNavigationController.m */; };
 		7CBAF5231A04AB4C00D6E74A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAF5221A04AB4C00D6E74A /* main.m */; };
-		7CBAF5261A04AB4C00D6E74A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAF5251A04AB4C00D6E74A /* AppDelegate.m */; };
 		7CBAF52C1A04AB4C00D6E74A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAF52A1A04AB4C00D6E74A /* Main.storyboard */; };
 		7CBAF52E1A04AB4C00D6E74A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAF52D1A04AB4C00D6E74A /* Images.xcassets */; };
 		7CBAF5311A04AB4C00D6E74A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAF52F1A04AB4C00D6E74A /* LaunchScreen.xib */; };
@@ -69,8 +66,11 @@
 		A465108A1A1203C200C3DA48 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A46510891A1203C200C3DA48 /* ShareViewController.m */; };
 		A465108D1A12041E00C3DA48 /* BookServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A465108C1A12041E00C3DA48 /* BookServiceViewController.m */; };
 		A46510911A12046700C3DA48 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A46510901A12046700C3DA48 /* IntroductionViewController.m */; };
+		A465109B1A12051600C3DA48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A46510941A12051600C3DA48 /* AppDelegate.m */; };
+		A465109C1A12051600C3DA48 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A46510961A12051600C3DA48 /* BaseNavigationController.m */; };
+		A465109D1A12051600C3DA48 /* BeautyUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A46510981A12051600C3DA48 /* BeautyUtility.m */; };
+		A465109E1A12051600C3DA48 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A465109A1A12051600C3DA48 /* MainTabBarViewController.m */; };
 		A4BBC3731A0B069000D6A596 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBC3721A0B069000D6A596 /* Default-568h@2x.png */; };
-		A4BBC3761A0B079E00D6A596 /* BeautyUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BBC3751A0B079E00D6A596 /* BeautyUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,15 +90,9 @@
 		7CB8C49E1A060CAE00C47C24 /* SubListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubListTableViewCell.m; sourceTree = "<group>"; };
 		7CB8C4A01A06129400C47C24 /* SubListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubListView.h; sourceTree = "<group>"; };
 		7CB8C4A11A06129400C47C24 /* SubListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubListView.m; sourceTree = "<group>"; };
-		7CBAACD61A0A42EE00B65DAE /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
-		7CBAACD71A0A42EE00B65DAE /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
-		7CBAACD81A0A42EE00B65DAE /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
-		7CBAACD91A0A42EE00B65DAE /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		7CBAF51D1A04AB4C00D6E74A /* ServiceBeauty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceBeauty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CBAF5211A04AB4C00D6E74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CBAF5221A04AB4C00D6E74A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7CBAF5241A04AB4C00D6E74A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7CBAF5251A04AB4C00D6E74A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7CBAF52B1A04AB4C00D6E74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CBAF52D1A04AB4C00D6E74A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7CBAF5301A04AB4C00D6E74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -171,9 +165,15 @@
 		A465108C1A12041E00C3DA48 /* BookServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookServiceViewController.m; path = ViewController/home/BookServiceViewController.m; sourceTree = "<group>"; };
 		A465108F1A12046700C3DA48 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntroductionViewController.h; path = ViewController/introduction/IntroductionViewController.h; sourceTree = "<group>"; };
 		A46510901A12046700C3DA48 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntroductionViewController.m; path = ViewController/introduction/IntroductionViewController.m; sourceTree = "<group>"; };
+		A46510931A12051600C3DA48 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Utility/AppDelegate.h; sourceTree = "<group>"; };
+		A46510941A12051600C3DA48 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Utility/AppDelegate.m; sourceTree = "<group>"; };
+		A46510951A12051600C3DA48 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNavigationController.h; path = Utility/BaseNavigationController.h; sourceTree = "<group>"; };
+		A46510961A12051600C3DA48 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNavigationController.m; path = Utility/BaseNavigationController.m; sourceTree = "<group>"; };
+		A46510971A12051600C3DA48 /* BeautyUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeautyUtility.h; path = Utility/BeautyUtility.h; sourceTree = "<group>"; };
+		A46510981A12051600C3DA48 /* BeautyUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BeautyUtility.m; path = Utility/BeautyUtility.m; sourceTree = "<group>"; };
+		A46510991A12051600C3DA48 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTabBarViewController.h; path = Utility/MainTabBarViewController.h; sourceTree = "<group>"; };
+		A465109A1A12051600C3DA48 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTabBarViewController.m; path = Utility/MainTabBarViewController.m; sourceTree = "<group>"; };
 		A4BBC3721A0B069000D6A596 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		A4BBC3741A0B079E00D6A596 /* BeautyUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyUtility.h; sourceTree = "<group>"; };
-		A4BBC3751A0B079E00D6A596 /* BeautyUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,14 +215,7 @@
 		7CBAF51F1A04AB4C00D6E74A /* ServiceBeauty */ = {
 			isa = PBXGroup;
 			children = (
-				7CBAF5241A04AB4C00D6E74A /* AppDelegate.h */,
-				7CBAF5251A04AB4C00D6E74A /* AppDelegate.m */,
-				7CBAACD61A0A42EE00B65DAE /* MainTabBarViewController.h */,
-				7CBAACD71A0A42EE00B65DAE /* MainTabBarViewController.m */,
-				7CBAACD81A0A42EE00B65DAE /* BaseNavigationController.h */,
-				7CBAACD91A0A42EE00B65DAE /* BaseNavigationController.m */,
-				A4BBC3741A0B079E00D6A596 /* BeautyUtility.h */,
-				A4BBC3751A0B079E00D6A596 /* BeautyUtility.m */,
+				A46510921A12050800C3DA48 /* Utility */,
 				7CBAF5501A04BA2200D6E74A /* View */,
 				7CBAF5491A04AC7500D6E74A /* ViewController */,
 				7CBAF52A1A04AB4C00D6E74A /* Main.storyboard */,
@@ -386,6 +379,21 @@
 			name = introduction;
 			sourceTree = "<group>";
 		};
+		A46510921A12050800C3DA48 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A46510931A12051600C3DA48 /* AppDelegate.h */,
+				A46510941A12051600C3DA48 /* AppDelegate.m */,
+				A46510951A12051600C3DA48 /* BaseNavigationController.h */,
+				A46510961A12051600C3DA48 /* BaseNavigationController.m */,
+				A46510971A12051600C3DA48 /* BeautyUtility.h */,
+				A46510981A12051600C3DA48 /* BeautyUtility.m */,
+				A46510991A12051600C3DA48 /* MainTabBarViewController.h */,
+				A465109A1A12051600C3DA48 /* MainTabBarViewController.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -525,19 +533,19 @@
 			files = (
 				A46510911A12046700C3DA48 /* IntroductionViewController.m in Sources */,
 				A465106E1A1201C200C3DA48 /* CollectTableViewCell.m in Sources */,
-				A4BBC3761A0B079E00D6A596 /* BeautyUtility.m in Sources */,
+				A465109D1A12051600C3DA48 /* BeautyUtility.m in Sources */,
 				7C0729611A07B3280074057E /* SubListView.m in Sources */,
 				A465107A1A12029300C3DA48 /* CollectViewController.m in Sources */,
+				A465109B1A12051600C3DA48 /* AppDelegate.m in Sources */,
 				7C9E4C331A0A6A1100624819 /* BeautyMakeUpFootTableViewCell.m in Sources */,
 				A465106F1A1201C200C3DA48 /* OrderTableViewCell.m in Sources */,
-				7CBAF5261A04AB4C00D6E74A /* AppDelegate.m in Sources */,
 				A465108A1A1203C200C3DA48 /* ShareViewController.m in Sources */,
+				A465109E1A12051600C3DA48 /* MainTabBarViewController.m in Sources */,
+				A465109C1A12051600C3DA48 /* BaseNavigationController.m in Sources */,
 				7CBAF5531A04BA4300D6E74A /* AdvitiseView.m in Sources */,
-				7CBAACDA1A0A42EE00B65DAE /* MainTabBarViewController.m in Sources */,
 				7CB8C49F1A060CAE00C47C24 /* SubListTableViewCell.m in Sources */,
 				A465108D1A12041E00C3DA48 /* BookServiceViewController.m in Sources */,
 				A46510861A12039500C3DA48 /* SubListViewController.m in Sources */,
-				7CBAACDB1A0A42EE00B65DAE /* BaseNavigationController.m in Sources */,
 				A46510791A12029300C3DA48 /* AccountViewController.m in Sources */,
 				A465107C1A12029300C3DA48 /* OrderDetailsViewController.m in Sources */,
 				A465107B1A12029300C3DA48 /* MyOrderViewController.m in Sources */,
