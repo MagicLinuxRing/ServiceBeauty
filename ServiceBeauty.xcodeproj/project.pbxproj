@@ -32,6 +32,7 @@
 		7CBE7A2D1A13843800E64587 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBE7A2C1A13843800E64587 /* libz.1.2.5.dylib */; };
 		7CBE7A2F1A13843E00E64587 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBE7A2E1A13843E00E64587 /* CFNetwork.framework */; };
 		7CBE7A311A13845900E64587 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBE7A301A13845900E64587 /* libicucore.dylib */; };
+		7CBE7A341A1385EF00E64587 /* BeautyServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE7A331A1385EF00E64587 /* BeautyServiceRequest.m */; };
 		A46510431A12005E00C3DA48 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A465101F1A12005E00C3DA48 /* 1.jpg */; };
 		A46510441A12005E00C3DA48 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A46510201A12005E00C3DA48 /* 2.jpg */; };
 		A46510451A12005E00C3DA48 /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = A46510211A12005E00C3DA48 /* arrows.png */; };
@@ -150,6 +151,8 @@
 		7CBE7A2C1A13843800E64587 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		7CBE7A2E1A13843E00E64587 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7CBE7A301A13845900E64587 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		7CBE7A321A1385EF00E64587 /* BeautyServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyServiceRequest.h; sourceTree = "<group>"; };
+		7CBE7A331A1385EF00E64587 /* BeautyServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyServiceRequest.m; sourceTree = "<group>"; };
 		A465101F1A12005E00C3DA48 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = image/1.jpg; sourceTree = "<group>"; };
 		A46510201A12005E00C3DA48 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = image/2.jpg; sourceTree = "<group>"; };
 		A46510211A12005E00C3DA48 /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrows.png; path = image/arrows.png; sourceTree = "<group>"; };
@@ -349,6 +352,8 @@
 				7CBE7A041A1382BE00E64587 /* ASI */,
 				7CBE7A011A1382A800E64587 /* HttpRequestWrap.h */,
 				7CBE7A021A1382A800E64587 /* HttpRequestWrap.m */,
+				7CBE7A321A1385EF00E64587 /* BeautyServiceRequest.h */,
+				7CBE7A331A1385EF00E64587 /* BeautyServiceRequest.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -646,6 +651,7 @@
 				7C9E4C331A0A6A1100624819 /* BeautyMakeUpFootTableViewCell.m in Sources */,
 				A465106F1A1201C200C3DA48 /* OrderTableViewCell.m in Sources */,
 				A465108A1A1203C200C3DA48 /* ShareViewController.m in Sources */,
+				7CBE7A341A1385EF00E64587 /* BeautyServiceRequest.m in Sources */,
 				A465109E1A12051600C3DA48 /* MainTabBarViewController.m in Sources */,
 				7CBE7A291A1382F200E64587 /* NSString+SBJSON.m in Sources */,
 				A465109C1A12051600C3DA48 /* BaseNavigationController.m in Sources */,
